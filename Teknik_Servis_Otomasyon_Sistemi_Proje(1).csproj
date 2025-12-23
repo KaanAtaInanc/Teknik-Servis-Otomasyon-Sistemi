@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4B7ED2B-B79F-471B-8286-35430A792026}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Teknik_Servis_Otomasyon_Sistemi_Proje_1_</RootNamespace>
+    <AssemblyName>Teknik_Servis_Otomasyon_Sistemi_Proje%281%29</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp.Material, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.Material.6.6.0\lib\net48\FontAwesome.Sharp.Material.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Ana_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Ana_Panel.Designer.cs">
+      <DependentUpon>Admin_Ana_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ariza_Paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ariza_Paneli.Designer.cs">
+      <DependentUpon>Ariza_Paneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Atanan_Islemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atanan_Islemler.Designer.cs">
+      <DependentUpon>Atanan_Islemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danisma_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danisma_Panel.Designer.cs">
+      <DependentUpon>Danisma_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Giris.Designer.cs">
+      <DependentUpon>Kullanici_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri_Yonetim_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri_Yonetim_Form.Designer.cs">
+      <DependentUpon>Musteri_Yonetim_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oturum.cs" />
+    <Compile Include="Personel_Yonetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_Yonetim.Designer.cs">
+      <DependentUpon>Personel_Yonetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlama_Paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlama_Paneli.Designer.cs">
+      <DependentUpon>Raporlama_Paneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sifre_Sifirla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sifre_Sifirla.Designer.cs">
+      <DependentUpon>Sifre_Sifirla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_Takip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_Takip.Designer.cs">
+      <DependentUpon>Stok_Takip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknik_Servis_DBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Teknik_Servis_DBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teknisyen_Ana_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teknisyen_Ana_Panel.Designer.cs">
+      <DependentUpon>Teknisyen_Ana_Panel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Ana_Panel.resx">
+      <DependentUpon>Admin_Ana_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ariza_Paneli.resx">
+      <DependentUpon>Ariza_Paneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atanan_Islemler.resx">
+      <DependentUpon>Atanan_Islemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danisma_Panel.resx">
+      <DependentUpon>Danisma_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Giris.resx">
+      <DependentUpon>Kullanici_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri_Yonetim_Form.resx">
+      <DependentUpon>Musteri_Yonetim_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_Yonetim.resx">
+      <DependentUpon>Personel_Yonetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raporlama_Paneli.resx">
+      <DependentUpon>Raporlama_Paneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sifre_Sifirla.resx">
+      <DependentUpon>Sifre_Sifirla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_Takip.resx">
+      <DependentUpon>Stok_Takip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teknisyen_Ana_Panel.resx">
+      <DependentUpon>Teknisyen_Ana_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Teknik_Servis_DBDataSet11.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet11.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet21.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet21.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet32.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet32.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet4.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet4.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet41.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet41.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet5.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet5.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet6.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet6.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet7.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet7.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet8.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet8.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet9.xsc">
+      <DependentUpon>Teknik_Servis_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Teknik_Servis_DBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teknik_Servis_DBDataSet9.xss">
+      <DependentUpon>Teknik_Servis_DBDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
