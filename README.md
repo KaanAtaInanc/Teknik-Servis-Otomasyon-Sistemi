@@ -97,3 +97,4 @@ using (SqlTransaction transaction = connection.BeginTransaction())
         transaction.Rollback(); // Hata varsa her şeyi geri al (Veri kaybını önle)
     }
 }
+
